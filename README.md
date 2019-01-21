@@ -1,2 +1,8 @@
-# paypal_ipn_to_mailchimp
-Wordpreess Plugin
+# Wordpress Plugin
+
+
+## Change Log
+
+1.0 2019/01/21
+	Init Version
+    Make the log of the transaction and mailchimp
