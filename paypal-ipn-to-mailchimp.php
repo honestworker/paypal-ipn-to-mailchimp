@@ -1,5 +1,4 @@
 <?php
-
 /**
  * The plugin bootstrap file
  *
@@ -8,17 +7,17 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              https://github.com/honestworker/
+ * @link              http://amintaibouta.com
  * @since             1.0.0
  * @package           Paypal_Ipn_To_Mailchimp
  *
  * @wordpress-plugin
  * Plugin Name:       Paypal IPN to mailchimp
- * Plugin URI:        https://github.com/honestworker/paypal-ipn-to-mailchimp
+ * Plugin URI:        http://amintaibouta.com
  * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
  * Version:           1.0.0
- * Author:            Honestworker.
- * Author URI:        https://github.com/honestworker/
+ * Author:            Amin T
+ * Author URI:        http://amintaibouta.com
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       paypal-ipn-to-mailchimp
@@ -74,12 +73,12 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-paypal-ipn-to-mailchimp.ph
  * @since    1.0.0
  */
 function run_paypal_ipn_to_mailchimp() {
-
 	$plugin = new Paypal_Ipn_To_Mailchimp();
 	$plugin->run();
-
 }
 
 require_once plugin_dir_path( __FILE__ ) . 'includes/paypal-ipn.php';
 require_once plugin_dir_path( __FILE__ ) . 'includes/mailchimp.php';
 run_paypal_ipn_to_mailchimp();
+
+?>

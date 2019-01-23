@@ -52,6 +52,10 @@ class Paypal_Ipn_To_Mailchimp_Admin {
 		$this->plugin_name = $plugin_name;
 		$this->version = $version;
 
+		/**
+		 * The class responsible for defining all actions that occur in the admin area.
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/admin.php';
 	}
 
 	/**
@@ -97,7 +101,5 @@ class Paypal_Ipn_To_Mailchimp_Admin {
 		 */
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/paypal-ipn-to-mailchimp-admin.js', array( 'jquery' ), $this->version, false );
-
 	}
-
 }

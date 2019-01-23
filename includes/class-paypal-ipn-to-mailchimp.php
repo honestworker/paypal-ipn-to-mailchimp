@@ -100,6 +100,16 @@ class Paypal_Ipn_To_Mailchimp {
 	private function load_dependencies() {
 
 		/**
+		 * Functions
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/functions.php';
+		
+		/**
+		 * Functions
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-pitm-logs.php';
+
+		/**
 		 * The class responsible for orchestrating the actions and filters of the
 		 * core plugin.
 		 */
@@ -110,6 +120,7 @@ class Paypal_Ipn_To_Mailchimp {
 		 * of the plugin.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-paypal-ipn-to-mailchimp-i18n.php';
+
 
 		/**
 		 * The class responsible for defining all actions that occur in the admin area.

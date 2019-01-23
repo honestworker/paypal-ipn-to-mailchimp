@@ -30,7 +30,9 @@ class Paypal_Ipn_To_Mailchimp_Deactivator {
 	 * @since    1.0.0
 	 */
 	public static function deactivate() {
+		global $wpdb;
+		$table_name = $wpdb->prefix . 'pitm_logs';
 
+		$wpdb->query("DROP TABLE IF EXISTS $table_name");
 	}
-
 }
